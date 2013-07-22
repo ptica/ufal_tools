@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Ufal tools feature.
+ */
+
+include_once 'ufal_tools.features.inc';
