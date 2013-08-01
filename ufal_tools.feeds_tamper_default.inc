@@ -33,6 +33,36 @@ function ufal_tools_feeds_tamper_default() {
   $feeds_tamper = new stdClass();
   $feeds_tamper->disabled = FALSE; /* Edit this to true to make a default feeds_tamper disabled initially */
   $feeds_tamper->api_version = 2;
+  $feeds_tamper->id = 'tools_spider-xpathparser_1-implode';
+  $feeds_tamper->importer = 'tools_spider';
+  $feeds_tamper->source = 'xpathparser:1';
+  $feeds_tamper->plugin_id = 'implode';
+  $feeds_tamper->settings = array(
+    'glue' => '',
+    'real_glue' => '',
+  );
+  $feeds_tamper->weight = 0;
+  $feeds_tamper->description = 'Implode';
+  $export['tools_spider-xpathparser_1-implode'] = $feeds_tamper;
+
+  $feeds_tamper = new stdClass();
+  $feeds_tamper->disabled = FALSE; /* Edit this to true to make a default feeds_tamper disabled initially */
+  $feeds_tamper->api_version = 2;
+  $feeds_tamper->id = 'tools_spider-xpathparser_1-trim';
+  $feeds_tamper->importer = 'tools_spider';
+  $feeds_tamper->source = 'xpathparser:1';
+  $feeds_tamper->plugin_id = 'trim';
+  $feeds_tamper->settings = array(
+    'mask' => '',
+    'side' => 'trim',
+  );
+  $feeds_tamper->weight = 1;
+  $feeds_tamper->description = 'Trim';
+  $export['tools_spider-xpathparser_1-trim'] = $feeds_tamper;
+
+  $feeds_tamper = new stdClass();
+  $feeds_tamper->disabled = FALSE; /* Edit this to true to make a default feeds_tamper disabled initially */
+  $feeds_tamper->api_version = 2;
   $feeds_tamper->id = 'tools_spider-xpathparser_13-explode';
   $feeds_tamper->importer = 'tools_spider';
   $feeds_tamper->source = 'xpathparser:13';
@@ -165,6 +195,38 @@ function ufal_tools_feeds_tamper_default() {
   $feeds_tamper->weight = 5;
   $feeds_tamper->description = 'Other Applications';
   $export['tools_spider-xpathparser_13-find_replace6'] = $feeds_tamper;
+
+  $feeds_tamper = new stdClass();
+  $feeds_tamper->disabled = FALSE; /* Edit this to true to make a default feeds_tamper disabled initially */
+  $feeds_tamper->api_version = 2;
+  $feeds_tamper->id = 'tools_spider-xpathparser_2-explode';
+  $feeds_tamper->importer = 'tools_spider';
+  $feeds_tamper->source = 'xpathparser:2';
+  $feeds_tamper->plugin_id = 'explode';
+  $feeds_tamper->settings = array(
+    'separator' => ',%s',
+    'limit' => '',
+    'real_separator' => ', ',
+  );
+  $feeds_tamper->weight = 0;
+  $feeds_tamper->description = 'Explode';
+  $export['tools_spider-xpathparser_2-explode'] = $feeds_tamper;
+
+  $feeds_tamper = new stdClass();
+  $feeds_tamper->disabled = FALSE; /* Edit this to true to make a default feeds_tamper disabled initially */
+  $feeds_tamper->api_version = 2;
+  $feeds_tamper->id = 'tools_spider-xpathparser_3-explode';
+  $feeds_tamper->importer = 'tools_spider';
+  $feeds_tamper->source = 'xpathparser:3';
+  $feeds_tamper->plugin_id = 'explode';
+  $feeds_tamper->settings = array(
+    'separator' => ',%s',
+    'limit' => '',
+    'real_separator' => ', ',
+  );
+  $feeds_tamper->weight = 0;
+  $feeds_tamper->description = 'Explode';
+  $export['tools_spider-xpathparser_3-explode'] = $feeds_tamper;
 
   return $export;
 }
