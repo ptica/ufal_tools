@@ -19,6 +19,7 @@ function ufal_tools_uuid_features_default_content() {
   'promote' => 0,
   'sticky' => 0,
   'vuuid' => '3b4c9c45-4b9d-4269-b0be-1ed4f6d2a30a',
+  'ds_switch' => '',
   'type' => 'tools_spider',
   'language' => 'und',
   'created' => 1374267482,
